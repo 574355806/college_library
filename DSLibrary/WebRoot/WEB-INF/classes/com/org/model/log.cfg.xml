@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernat mapping DTD3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+<class name="com.org.model.user" table="tb_loginer" catalog="db_library">
+<id name="username" type="java.lang.String">
+<column name="username"></column>
+<generator class="assigned"></generator>
+</id>
+<property name="password" type="java.lang.String" >
+<column name="password"></column>
+</property>
+<property name="root" type="java.lang.String" >
+<column name="root"></column>
+</property>
+<property name="answer" type="java.lang.String" >
+<column name="answer"></column>
+</property>
+</class>
+</hibernate-mapping>

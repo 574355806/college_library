@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernat mapping DTD3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+<class name="com.org.model.borrowrecord" table="tb_borrowrecord" catalog="db_library">
+
+<composite-id>
+<key-property name="bid" type="java.lang.String" column="bid"></key-property>
+<key-property name="rnumber" type="java.lang.String" column="rnumber"></key-property>
+</composite-id>
+
+<property name="bname" type="java.lang.String" >
+<column name="bname"></column>
+</property>
+<property name="rname" type="java.lang.String" >
+<column name="rname"></column>
+</property>
+<property name="classnum" type="java.lang.String" >
+<column name="classnum"></column>
+</property>
+<property name="borrowdate" type="java.util.Date" >
+<column name="borrowdate"></column> 
+</property>
+<property name="returndate" type="java.util.Date" >
+<column name="returndate"></column> 
+</property>
+<property name="borrownum" type="java.lang.Integer" >
+<column name="borrownum"></column> 
+</property>
+</class>
+</hibernate-mapping>

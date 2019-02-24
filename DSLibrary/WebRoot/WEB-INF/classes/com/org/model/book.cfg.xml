@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernat mapping DTD3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+<class name="com.org.model.book" table="tb_book" catalog="db_library">
+<id name="bid" type="java.lang.String">
+<column name="bid"></column>
+ <generator class="assigned"></generator> 
+</id>
+<property name="bname" type="java.lang.String" >
+<column name="bname"></column>
+</property>
+<property name="bwriter" type="java.lang.String" >
+<column name="bwriter"></column>
+
+</property>
+<property name="bnumber" type="java.lang.Integer" >
+<column name="bnumber"></column> 
+</property>
+<property name="btype" type="java.lang.String" >
+<column name="btype"></column> 
+</property>
+<property name="bprice" type="java.lang.Double" >
+<column name="bprice"></column> 
+</property>
+
+<property name="bpublisher" type="java.lang.String" >
+<column name="bpublisher"></column>
+</property>
+<property name="bplace" type="java.lang.String" >
+<column name="bplace"></column>
+</property>
+<property name="bborrow" type="java.lang.Integer" >
+<column name="bborrow"></column> 
+</property>
+</class>
+</hibernate-mapping>

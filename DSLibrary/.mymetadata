@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="DSLibrary"
+  id="myeclipse.1502272553936"
+  context-root="/DSLibrary"
+  j2ee-spec="5.0"
+  archive="DSLibrary.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

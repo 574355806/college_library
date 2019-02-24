@@ -1,0 +1,152 @@
+<!--
+body{ font-size:12px; line-height:24px;}
+#script img.msg{cursor:pointer;}
+#shardow{
+   position:absolute;
+   background-color:#000;
+   width:100%;
+   left:0;
+   top:0;
+   opacity:.4;  
+   -moz-opacity:.4;
+   filter:alpha(opacity=40);
+   z-index:10000;
+}
+#msg-window{
+   position:absolute;
+   width:400px;
+   border:2px solid #9BD;
+   overflow:hidden;
+   background-color:#DFE8F6;
+   z-index:10001;
+}
+/* TitleBar Start */
+#msg-titlebar{
+   position:relative;
+   margin:0 auto;
+   font:bold 12px tahoma,arial,verdana,sans-serif;
+   background-image:url(images/logger_title.gif);
+   zoom:1;
+   height:25px;
+   border-bottom:1px solid #9BD;
+   overflow:hidden;
+}
+#msg-titlebar h2{
+   margin:0 auto;
+   height:25px;
+   line-height:26px;
+   letter-spacing:1px;
+   text-indent:8px;
+   color:#275C91;
+   overflow:hidden;
+   font-size:12px;
+   text-align:left;
+}
+#msg-closebar{
+   position:absolute;
+   width:15px;
+   height:15px;
+   right:6px;
+   top:5px;
+   overflow:hidden;
+}
+#msg-closebar a:link,
+#msg-closebar a:visited{
+   float:left;
+   width:15px;
+   height:15px;
+   overflow:hidden;
+   font-size:1px;
+   display:block;
+   text-indent:-999px;
+   background:transparent url(images/tool-sprites.gif) 0 0 no-repeat;
+}
+#msg-closebar a:hover,
+#msg-closebar a:active{
+   background:transparent url(images/tool-sprites.gif) -15px 0 no-repeat;
+}
+/* End TitleBar */
+
+/* Content Start */
+#msg-content{
+   margin:0 auto;
+   width:100%;
+   background-color:#DFE8F6;
+   overflow:hidden;
+}
+#msg-infoBody{
+   margin:0 auto;
+   width:100%;
+   padding:20px 20px 10px 58px;
+   background:url(images/icon-question.gif) 20px 18px no-repeat;
+   color:#15428b;
+   font-family:tahoma,arial,verdana,sans-serif;
+   overflow:hidden;
+   line-height:20px;
+   text-align:left;
+}
+#msg-infoBody span,
+#msg-infoBody em{
+   float:left;
+   width:100%;
+   line-height:160%;
+   overflow:hidden;
+   font-size:12px;
+   font-style:normal;
+   font-weight:normal;
+} 
+#msg-infoBody span{
+	padding-top:15px;
+}
+#msg-infoBody a:link,
+#msg-infoBody a:visited,
+#msg-infoBody a:hover{
+	color:#15428b;
+	text-decoration:underline;
+}
+#msg-infoBody a:hover{
+	color:#C80000;
+	text-decoration:none;
+}
+#msg-btns{
+   margin:0 auto;
+   width:270px;
+   margin-top:15px;
+   margin-bottom:15px;
+   text-align:center;
+   overflow:hidden;
+}
+#msg-btns a#msg-btnEnter:link,
+#msg-btns a#msg-btnEnter:visited{
+   float:left;
+   width:73px;
+   height:21px;
+   overflow:hidden;
+   font-size:12px;
+   display:block;
+   margin-left:20px;
+   text-indent:-999px;
+   background:url(images/buttons.jpg) 0 0 no-repeat;
+}
+#msg-btns a#msg-btnEnter:hover,
+#msg-btns a#msg-btnEnter:active{
+   background:url(images/buttons.jpg) 0 -21px no-repeat;
+}
+#msg-btns a#msg-btnCancel:link,
+#msg-btns a#msg-btnCancel:visited{
+   float:right;
+   width:73px;
+   height:21px;
+   overflow:hidden;
+   font-size:12px;
+   display:block;
+   margin-right:20px;
+   text-indent:-999px;
+   background:url(images/buttons.jpg) 0 -42px no-repeat;
+}
+#msg-btns a#msg-btnCancel:hover,
+#msg-btns a#msg-btnCancel:active{
+   background:url(images/buttons.jpg) 0 -63px no-repeat;
+}
+/* End Content 一流素材网收藏整理：www.16sucai.com */
+-->

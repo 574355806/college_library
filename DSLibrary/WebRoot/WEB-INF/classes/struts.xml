@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts> 
+<constant name="structs.devMode" value="true"></constant>
+<constant name="struts.custom.i18n.resources" value="global" />
+
+ <include file="struts-default.xml"/>  
+
+<package name="default" namespace="/" extends="struts-default">
+<action name="*enter" class="com.org.action.mainAction" method="{1}enter" >
+<result name="enter">/WEB-INF/main/enter.jsp</result>
+<result name="landerror">/land.jsp</result>
+</action> 
+
+
+<!-- 所有搜索页面的action配置 -->
+<action name="*_*_searchresult" class="com.org.action.{1}Action" method="{2}" >
+<result name="{2}">/somefiles/searchresult.jsp</result>
+</action>
+<!-- 返回操作结果action配置 -->
+  <action name="*_*_result" class="com.org.action.{1}Action" method="{2}" >
+<result name="{2}">/WEB-INF/main/result.jsp</result>
+</action>
+<action name="*_*" class="com.org.action.{1}Action" method="{2}" >
+<result name="{2}">/WEB-INF/{1}/{2}.jsp</result>
+</action>
+
+<action name="pageshow" class="com.org.action.PageAction" method="login">
+         <result name="book">/WEB-INF/book/show.jsp</result>
+          <result name="reader">/WEB-INF/reader/show.jsp</result>
+         <result name="borrowrecord">/WEB-INF/borrowrecord/show.jsp</result>
+          <result name="false">/WEB-INF/main/enter.jsp</result>
+        </action>
+       <action name="add" class="com.org.action.PageAction" method="add">
+          <result name="addbook">/WEB-INF/book/show.jsp</result>
+          <result name="addreader">/WEB-INF/reader/show.jsp</result>
+           <result name="addborrowrecord">/WEB-INF/borrowrecord/show.jsp</result>
+           </action>
+       <action name="before" class="com.org.action.PageAction" method="before">
+          <result name="beforebook">/WEB-INF/book/show.jsp</result>
+           <result name="beforereader">/WEB-INF/reader/show.jsp</result>
+        <result name="beforeborrowrecord">/WEB-INF/borrowrecord/show.jsp</result>
+        </action>
+
+<!-- 
+分页 -->
+ <!-- <action name="pageshow" class="com.action.PageAction" method="login">
+          <result name="success">/WEN-INF/book/show.jsp</result>
+          <result name="false">/WEN-INF/main/land.jsp</result>
+        </action>
+        <action name="add" class="com.action.PageAction" method="add">
+          <result name="add">/index.jsp</result>
+        </action>
+        <action name="before" class="com.action.PageAction" method="before">
+          <result name="before">/index.jsp</result>
+        </action> -->
+
+</package>
+<!-- 
+
+ --><!--  -->
+
+<!-- 使用多个action调用不同方法-->
+ 
+ <!--   <action name="adduser" class="com.org.action.userAction" method="adduser" >
+      <result name="adduser">/WEB-INF/user/adduser.jsp</result> 
+      </action>
+      <action name="removeuser" class="com.org.action.userAction" method="removeuser" >
+      <result name="removeuser">/WEB-INF/user/removeuser.jsp</result>
+     </action> -->
+<!--  使用一个action，多个result ，可以减少action，但无法减少配置-->
+ 
+   <!--  <action name="hello" class="com.org.action.userAction" >
+      <result name="adduser">/WEB-INF/user/adduser.jsp</result>
+      <result name="removeuser">/WEB-INF/user/removeuser.jsp</result>
+   
+      </action> -->
+   <!--    使用通配符减少配置 -->
+
+     <!--  <action name="*_*" class="com.org.action.{1}Action"  method="{2}">
+      <result name="{2}">/WEB-INF/{1}/{2}.jsp</result>
+      </action> -->
+   
+
+</struts>

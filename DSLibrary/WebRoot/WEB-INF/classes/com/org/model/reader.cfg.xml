@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernat mapping DTD3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+<class name="com.org.model.reader" table="tb_reader" catalog="db_library">
+<id name="rnumber" type="java.lang.String">
+<column name="rnumber"></column>
+<generator class="assigned"></generator>
+</id>
+<property name="rname" type="java.lang.String" >
+<column name="rname"></column>
+</property>
+<property name="rsex" type="java.lang.String" >
+<column name="rsex"></column>
+
+</property>
+<property name="classnum" type="java.lang.String" >
+<column name="classnum"></column>
+</property>
+<property name="dept" type="java.lang.String" >
+<column name="dept"></column>
+</property>
+<property name="rage" type="java.lang.Integer" >
+<column name="rage"></column> 
+</property>
+</class>
+</hibernate-mapping>
+
